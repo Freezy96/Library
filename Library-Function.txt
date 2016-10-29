@@ -1,0 +1,34 @@
+-login
+-logout
+-view
+-search
+
+Staff
+-insert
+-delete
+-update
+-borrow book for student (limit for each student)
+
+Student
+-reserve (limit for each student) 
+-download
+-upload
+
+database design
+-users
+	-id
+	-username
+	-password
+	-identity
+	-bookreservenum:int
+	-bookloannum:int
+
+-books
+	-isbn
+	-title
+	-author
+	-publisher
+	-image
+	-description
+	-reserve
+	-loan
