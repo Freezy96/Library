@@ -1,15 +1,14 @@
 <?php
 require_once('config.php'); 
-include('session.php');
 
 //get the q parameter from URL
-$q=$_GET["q"];
+$q=$_GET["search"];
 
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0) {
-
+$searchby = $_POST['searchby'];
   $q = $conn->escape_string($q);
-  $get_topics_sql = "SELECT topic_id, topic_title FROM forum_topics WHERE topic_title LIKE '%$q%' LIMIT 4" ;
+  $get_topics_sql = "SELECT title, author,subject, isbn, callnumber FROM books WHERE '$searchby' LIKE '%$q%' LIMIT 8";
 
   $get_topics_result = $conn->query($get_topics_sql);
 
@@ -17,10 +16,10 @@ if (strlen($q)>0) {
 
 
   while ($topic_info = $get_topics_result->fetch_assoc()) {
-    $topic_id = $topic_info['topic_id'];
-    $topic_title = stripcslashes($topic_info['topic_title']);
+    $topic_id = $topic_info['id'];
+    $topic_title = stripcslashes($topic_info['$searchby']);
 
-    $hint = "<a href='/forum/showtopic.php?topic_id=$topic_id'>$topic_title</a>";
+    $hint = "<a href='bookloaninfo.php?topic_id=$id'>$searchby</a>";
 
     array_push($hints, $hint);
   }
