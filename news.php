@@ -1,4 +1,4 @@
-			<h2>Library News & Notices</h2>
+			<h2><i class="fa fa-newspaper-o"></i> Library News & Notices</h2>
 			<a href="" class="pull-right btn btn-danger btn-sm">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 			<table class="table table-hover">
 				<tr>
@@ -32,7 +32,7 @@
 					<td><a href="">LIBRARY CLOSING ANNOUNCEMENT – Chinese New Year / 农历新年闭馆通知</a></td>
 				</tr>
 			</table>
-			<nav>
+			<nav class="text-center">
 				<ul class="pagination">
 <?php if(isset($_GET['page'])){ ?>
 					<li>
@@ -54,55 +54,55 @@
 				</ul>
 			</nav>
 			<div class="col-md-6">
-				<h3>New Books</h3>
+				<h3><span class="glyphicon glyphicon-book"></span> New Books <span class="label label-danger">New</span></h3>
 				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 				<table class="table">
 					<tr>
-						<td class="col-xs-2">Title</td>
+						<th class="col-xs-2">Title</th>
 						<td class="col-xs-4"></td>
 						<td rowspan="4">
 							<div class="col-xs-6">
-								<img src="0060515228.jpg" alt="Book Image" width="155" height="200">
+								<img src="0060515228.jpg" alt="Book Image" width="145" height="200">
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Author</td>
+						<th class="col-xs-2">Author</th>
 						<td class="col-xs-4"></td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Publisher</td>
+						<th class="col-xs-2">Publisher</th>
 						<td class="col-xs-4"></td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Call Number</td>
+						<th class="col-xs-2">Call Number</th>
 						<td class="col-xs-4"></td>
 					</tr>
 				</table>
 			</div>
 			<div class="col-md-6">
-				<h3>Popular Books</h3>
+				<h3><span class="glyphicon glyphicon-fire"></span> Popular Books</h3>
 				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 				<table class="table">
 					<tr>
-						<td class="col-xs-2">Title</td>
+						<th class="col-xs-2">Title</td>
 						<td class="col-xs-4"></td>
 						<td rowspan="4">
 							<div class="col-xs-6">
-								<img src="0307277291.jpg" alt="Book Image" width="155" height="200">
+								<img src="0307277291.jpg" alt="Book Image" width="145" height="200">
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Author</td>
+						<th class="col-xs-2">Author</td>
 						<td class="col-xs-4"></td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Publisher</td>
+						<th class="col-xs-2">Publisher</td>
 						<td class="col-xs-4"></td>
 					</tr>
 					<tr>
-						<td class="col-xs-2">Call Number</td>
+						<th class="col-xs-2">Call Number</td>
 						<td class="col-xs-4"></td>
 					</tr>
 				</table>

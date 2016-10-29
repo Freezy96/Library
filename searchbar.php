@@ -9,13 +9,13 @@
 		<div class="form-group">
 			<label class="control-label">by</label>
 			<select class="form-control" name="searchby">
-				<option value="title">Title</option>
-				<option value="author">Author</option>
-				<option value="subject">Subject</option>
-				<option value="isbn">ISBN</option>
-				<option value="callnumber">Call Number</option>
+				<option>Title</option>
+				<option>Author</option>
+				<option>Subject</option>
+				<option>ISBN</option>
+				<option>Call Number</option>
 			</select>
 		</div>
-		<button type="submit" class="btn btn-primary btn-sm">Search</button>
+		<button type="submit" class="btn btn-primary btn-md">Search</button>
 	</form>
 </div>

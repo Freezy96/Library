@@ -30,7 +30,5 @@ database design
 	-publisher
 	-image
 	-description
-	-subject
-	-callnumber
 	-reserve
 	-loan

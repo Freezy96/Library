@@ -86,4 +86,16 @@
 			max-height: 100%;
 			max-width: 100%;
 		}
+		.btn-primary{
+			background-color: #306EFF;
+		}
+		.btn-primary:hover{
+			background-color: #2B65EC;
+		}
+		.btn-danger, .label-danger{
+			background-color: #F62817;
+		}
+		.btn-danger:hover{
+			background-color: #E41B17;
+		}
 	</style>
