@@ -1,11 +1,15 @@
 <?php 
 require_once('config.php');
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-$email = $_POST['email'];
+$username = mysqli_escape_string($_POST['username']);
+$password = mysqli_escape_string(md5($_POST['password']));
+$email = mysqli_escape_string($_POST['email']);
 $sql = "INSERT INTO users(username, password, email) VALUES('$username', '$password', '$email')";
- $conn->query($sql);
- echo $conn->error;
+ $result = $conn->query($sql);
+if($result){
+	header('location: loginpage.php');
+}else{
+	echo $conn->error;
+}
  $conn->close();
  ?>
