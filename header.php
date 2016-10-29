@@ -36,7 +36,9 @@
 								<li><a href="#">CN</a></li>
 							</ul>
 						</li>
+<?php if(isset($_SESSION['username'])){ ?>
 						<li><a href="logout.php">Logout</a></li>
+<?php } ?>
 					</ul>
 				</div>
 			</div><!-- container fluid -->

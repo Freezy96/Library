@@ -19,4 +19,91 @@
 				<tr>
 					<td><a href="">TCM Library closing on 4 July 2016 / 中医图7月4日（星期一）闭馆</a></td>
 				</tr>
+				<tr>
+					<td><a href="">Trail Database - CNKI Journal Translation Project</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Subscription to “CNKI” & 1-year Complimentary Access to “Traditional Chinese Medicine Knowledge Service Platform” / CNKI资料库与中医药系列知识服务平台</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Library opening hours / 图书馆开放时间</a></td>
+				</tr>
+				<tr>
+					<td><a href="">LIBRARY CLOSING ANNOUNCEMENT – Chinese New Year / 农历新年闭馆通知</a></td>
+				</tr>
 			</table>
+			<nav>
+				<ul class="pagination">
+<?php if(isset($_GET['page'])){ ?>
+					<li>
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+						</a>
+					</li>
+<?php } ?>
+					<li class="active"><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">4</a></li>
+					<li><a href="#">5</a></li>
+					<li>
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="col-md-6">
+				<h3>New Books</h3>
+				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
+				<table class="table">
+					<tr>
+						<td class="col-xs-2">Title</td>
+						<td class="col-xs-4"></td>
+						<td rowspan="4">
+							<div class="col-xs-6">
+								<img src="0060515228.jpg" alt="Book Image" width="155" height="200">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Author</td>
+						<td class="col-xs-4"></td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Publisher</td>
+						<td class="col-xs-4"></td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Call Number</td>
+						<td class="col-xs-4"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-6">
+				<h3>Popular Books</h3>
+				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
+				<table class="table">
+					<tr>
+						<td class="col-xs-2">Title</td>
+						<td class="col-xs-4"></td>
+						<td rowspan="4">
+							<div class="col-xs-6">
+								<img src="0307277291.jpg" alt="Book Image" width="155" height="200">
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Author</td>
+						<td class="col-xs-4"></td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Publisher</td>
+						<td class="col-xs-4"></td>
+					</tr>
+					<tr>
+						<td class="col-xs-2">Call Number</td>
+						<td class="col-xs-4"></td>
+					</tr>
+				</table>
+			</div>

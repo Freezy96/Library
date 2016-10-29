@@ -14,7 +14,7 @@
 		.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
 			color: #BCC6CC;
 		}
-		.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav .dropdown a:hover,.navbar-default .navbar-nav  .dropdown a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .nav-pills>li>a:hover,.nav-pills>li>a:focus{
+		.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav .dropdown a:hover,.navbar-default .navbar-nav  .dropdown a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .nav-pills>li>a:hover,.nav-pills>li>a:focus, .list-group .active:hover{
 			color: #fff;
 			background-color: #2B65EC;
 		}
@@ -81,5 +81,9 @@
 		}
 		.panel-primary .panel-heading{
 			background-color: #306EFF;
+		}
+		.thumbnail img{
+			max-height: 100%;
+			max-width: 100%;
 		}
 	</style>
