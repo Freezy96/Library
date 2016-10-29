@@ -1,41 +1,85 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-		.navbar-default{
-			background-color: #4481e9;
-		}
-		.navbar-default .navbar-brand{
+		.navbar-default, .nav-pills .open .dropdown-menu,.navbar-default .navbar-nav .open .dropdown-menu, .list-group .active{
+			background-color: #306EFF;
+		}	
+		.navbar-default .navbar-brand, .navbar-default .navbar-nav li>a, .navbar-default .dropdown a, .nav-pills .open .dropdown-menu>li>a, .navbar-default .navbar-nav .open .dropdown-menu>li>a{
 			color: #fff;
 		}
 		.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus{
-			color: #e2dfdf;
+			color: #BCC6CC;
 		}
-		.navbar-default .navbar-nav li a, .navbar-default .dropdown a{
+		.navbar-default .navbar-nav li>a:hover, .navbar-default .navbar-nav li>a:focus, .navbar-default .navbar-nav .dropdown a:hover,.navbar-default .navbar-nav  .dropdown a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .nav-pills>li>a:hover,.nav-pills>li>a:focus{
 			color: #fff;
-		}
-		.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus, .navbar-default .navbar-nav .dropdown a:hover,.navbar-default .navbar-nav  .dropdown a:focus{
-			color: #e2dfdf;
+			background-color: #2B65EC;
 		}
 		.navbar-default .navbar-toggle .icon-bar{
 			background-color: #fff;
 		}
-		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
-			background-color: #eb0f19;
+		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus, .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{
+			background-color: #2B65EC;
 		}
-		.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:focus,.navbar-default .navbar-nav>.open>a:hover{
-			background-color: #4685f1;
-		}
-		.navbar-default .navbar-nav .open .dropdown-menu{
-			background-color: #4685f1;
-		}
-		.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+		.nav-pills>li>a{
 			color: #fff;
+			background-color: #306EFF;
 		}
-		.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{
-			color: #fff;
-			background-color: #eb0f19;
+		.nav-pills .dropdown-menu>li>a:focus,.nav-pills .dropdown-menu>li>a:hover, .nav-pills .open>a, .nav-pills .open>a:hover, .nav-pills .open>a:focus{
+			background-color: #2B65EC;
+		}
+		.open > .dropdown-menu {
+		  -webkit-transform: scale(1, 1);
+		  transform: scale(1, 1);
+		}
+		.open > .dropdown-menu li a {
+		  color: #000;  
+		}
+		.dropdown-menu li a{
+		  color: #fff;
+		}
+		.dropdown-menu {
+		  -webkit-transform-origin: top;
+		  transform-origin: top;
+		  -webkit-animation-fill-mode: forwards;  
+		  animation-fill-mode: forwards; 
+		  -webkit-transform: scale(1, 0);
+		  display: block;
+		  
+		  transition: all 0.2s ease-out;
+		  -webkit-transition: all 0.2s ease-out;
+		}
+		.dropup .dropdown-menu {
+		  -webkit-transform-origin: bottom;
+		  transform-origin: bottom;  
+		}
+
+		.navbar .nav > li > .dropdown-menu:after {
+
+		}
+		.dropup > .dropdown-menu:after {
+		  border-bottom: 0;
+		  border-top: 6px solid rgba(39, 45, 51, 0.9);
+		  top: auto;
+		  display: inline-block;
+		  bottom: -6px;
+		  content: '';
+		  position: absolute;
+		  left: 50%;
+		  border-right: 6px solid transparent;
+		  border-left: 6px solid transparent;
+		}
+		.panel-primary{
+			border-color: #306EFF;
+		}
+		.panel-primary .panel-body{
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+		.panel-primary .panel-heading{
+			background-color: #306EFF;
 		}
 	</style>
