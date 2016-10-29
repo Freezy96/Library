@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 require_once('config.php'); 
 
 //get the q parameter from URL
