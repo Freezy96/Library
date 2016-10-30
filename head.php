@@ -4,6 +4,35 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	    function checkPass(){
+	        //Store the password field objects into variables ...
+	        var pass1 = document.getElementById('password1');
+	        var pass2 = document.getElementById('password2');
+
+            var div = document.getElementById('confirm');
+            var regBtn = document.getElementById('regBtn');
+	        //Store the Confimation Message Object ...
+	        var message = document.getElementById('confirmMessage');
+	        //Compare the values in the password field 
+	        //and the confirmation field
+	        if(pass1.value == pass2.value){
+	            //The passwords match. 
+	            //Set the color to the good color and inform
+	            //the user that they have entered the correct password 
+	            div.className = "form-group has-success has-feedback";
+	            message.innerHTML = "Passwords Match!"
+                regBtn.className = "btn btn-success btn-lg"
+	        }else{
+	            //The passwords do not match.
+	            //Set the color to the bad color and
+	            //notify the user.
+	            div.className = "form-group has-error has-feedback";
+	            message.innerHTML = "Passwords Do Not Match!"
+                regBtn.className = "btn btn-success btn-lg disabled"
+	        }
+	    }  
+</script>
 	<style>
 		.navbar-default, .nav-pills .open .dropdown-menu,.navbar-default .navbar-nav .open .dropdown-menu, .list-group .active{
 			background-color: #306EFF;

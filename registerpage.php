@@ -15,28 +15,30 @@
 					<div class="form-group">
 						<label class="control-label col-md-2">Username</label>
 						<div class="col-md-10">
-							<input type="text" name="username" class="form-control">
+							<input type="text" name="username" class="form-control" required>
 						</div>
 					</div>
 					<div class="form-group">
 						<label class="control-label col-md-2">Password</label>
 						<div class="col-md-10">
-							<input type="password" name="password" id="password1" class="form-control">
+							<input type="password" name="password" id="password1" class="form-control" required>
 						</div>
 					</div>
-					<div class="form-group">
+					<div class="form-group" id="confirm">
 						<label class="control-label col-md-2">Confirm Password</label>
 						<div class="col-md-10">
-							<input type="password" id="password2" class="form-control">
+							<input type="password" id="password2" class="form-control" onkeyup="checkPass(); return false;" required><span id="confirmMessage" class="help-block"></span>
 						</div>
+						
 					</div>
 					<div class="form-group">
 						<label class="control-label col-md-2">Email</label>
 						<div class="col-md-10">
-							<input type="email" name="email" class="form-control">
+							<input type="email" name="email" class="form-control" required>
 						</div>
 					</div>
-					<button class="pull-right btn btn-primary btn-md" type="submit">Register</button>
+					<button class="pull-right btn btn-primary btn-md" id="
+					regBtn" type="submit">Register</button>
 				</form>
 			</div>
 		</div>
