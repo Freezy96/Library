@@ -3,7 +3,9 @@
 <html>
 <head>
 	<title>Details</title>
-<?php include 'head.php'; ?>
+<?php 
+ include 'head.php'; 
+ ?>
 </head>
 <body>
 <div class="container-fluid">

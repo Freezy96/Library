@@ -1,3 +1,4 @@
+	
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -35,8 +36,10 @@
 								<li><a href="#">CN</a></li>
 							</ul>
 						</li>
-<?php if(isset($_SESSION['username'])){ ?>
+<?php 
+ if(isset($_SESSION['username'])){ ?>
 						<li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+
 <?php } ?>
 					</ul>
 				</div>

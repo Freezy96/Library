@@ -1,6 +1,7 @@
 <?php session_start();
 require_once('config.php');
 if(isset($_GET['searchbtn'])){
+
 $search = $_GET['search'];
 $searchby = $_GET['searchby'];
 $sql = "SELECT * FROM books WHERE ".$searchby." LIKE '%$search%'";
@@ -15,7 +16,7 @@ $result = $conn->query($sql);
 		<th>Title</th>
 		<td><?php echo $row['title']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td rowspan="5"><a href="bookdetails.php" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
+		<td rowspan="5"><a href="bookdetails.php?id=<?php echo $row['isbn']; ?>" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
 		<?php } ?>
 	</tr>
 	<tr>

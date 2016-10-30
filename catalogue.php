@@ -17,7 +17,7 @@
 		<div class="col-md-9">
 <?php include 'showbook.php'; ?>
 		</div>
-<?php }else{ ?>
+<?php }else{session_start(); ?>
 		<div class="col-md-12">
 <?php include 'showbook.php'; ?>
 		</div>
