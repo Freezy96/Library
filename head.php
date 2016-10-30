@@ -4,6 +4,11 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+	function goBack() {
+    	window.history.back();
+	}
+	</script>
 	<style>
 		.navbar-default, .nav-pills .open .dropdown-menu,.navbar-default .navbar-nav .open .dropdown-menu, .list-group .active{
 			background-color: #306EFF;
