@@ -12,7 +12,7 @@
 				<div class="collapse navbar-collapse" id="navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li><a href="catalogue.php">Library Catalogue</a></li>
-						<li><a href="http://www.southern.edu.my/mclc/">MCL Centre</a></li>
+						<li><a href="http://www.southern.edu.my/mclc/" target="_blank">MCL Centre</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
 							<ul class="dropdown-menu">

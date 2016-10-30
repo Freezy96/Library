@@ -10,11 +10,17 @@
 <?php include 'header.php'; ?>
 <?php include 'searchbar.php' ?>
 		<div class="col-xs-12 col-md-3">
+<?php if(!isset($_SESSION['username'])){ ?>
 <?php include 'loginform.php'; 	?>
 		</div>
 		<div class="col-xs-12 col-md-9">
-<?php include 'showbook.php' ?>
+<?php include 'showbook.php'; ?>
 		</div>
+<?php }else{ ?>
+		<div class="col-md-12">
+<?php include 'showbook.php'; ?>
+		</div>
+<?php } ?>
 	</div>
 </div>
 </body>

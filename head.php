@@ -98,4 +98,7 @@
 		.btn-danger:hover{
 			background-color: #E41B17;
 		}
+		.danger{
+			color: #F62817;
+		}
 	</style>

@@ -81,7 +81,7 @@
 				</table>
 			</div>
 			<div class="col-md-6">
-				<h3><span class="glyphicon glyphicon-fire"></span> Popular Books</h3>
+				<h3><span class="danger glyphicon glyphicon-fire"></span> Popular Books</h3>
 				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 				<table class="table">
 					<tr>
