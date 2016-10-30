@@ -84,7 +84,7 @@ $_SESSION['isbn'] = $id;
 						
 						<!-- <button class="btn btn-warning btn-md" id="reserve" name="reserve" value="<?php echo $row['isbn']; ?>"><span class="glyphicon glyphicon-tag"></span><span class="hidden-xs"> Reserve</span></button> -->
 					
-						<button class="btn btn-danger btn-md" onclick="goBack();"><span class="glyphicon glyphicon-remove"></span><span class="hidden-xs"> Back</span></button>
+						<a href="catalogue.php" class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span><span class="hidden-xs"> Back</span></a>
 				</form>		
 					</div>
 				</div>

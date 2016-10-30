@@ -13,7 +13,7 @@ header("Location: index.php");
 } 
 
 
-$sql = "DELETE FROM books WHERE id='$id'";
+$sql = "DELETE FROM books WHERE isbn='$id'";
 
 
 if ($conn->query($sql)) {

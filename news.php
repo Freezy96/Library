@@ -172,7 +172,7 @@
 
 			<?php 
 			require_once('config.php');
-			$sql1 = "SELECT * FROM books WHERE isbn='978-0393339758'";
+			$sql1 = "SELECT * FROM books WHERE isbn='978-0140280197'";
 			$resulta = $conn->query($sql1);
 			$rowa = $resulta->fetch_assoc();
 			$sql2 = "SELECT * FROM books WHERE isbn='978-0812981605'";
