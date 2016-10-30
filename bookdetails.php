@@ -60,8 +60,11 @@ $_SESSION['isbn'] = $id;
 				<div class="pull-left">
 				<form action="bookdetailsloan.php" method="POST">
 					<div class="btn-group">
-					
-						<button value="<?php echo $_SESSION['isbn']; ?>" class="btn btn-primary btn-md" id="loan" name="loanbtn" value="<?php echo $id ?>"><span class="glyphicon glyphicon-arrow-left"></span><span class="glyphicon glyphicon-book"></span><span class="hidden-xs"> Loan</span></button>
+					<?php if(isset($_SESSION['username'])){ ?>
+							<button value="<?php echo $_SESSION['isbn']; ?>" class="btn btn-primary btn-md" id="loan" name="loanbtn" value="<?php echo $id ?>"><span class="glyphicon glyphicon-arrow-left"></span><span class="glyphicon glyphicon-book"></span><span class="hidden-xs"> Loan</span>
+							</button>
+					<?php } ?>
+						
 					
 						
 					</div>
@@ -72,7 +75,11 @@ $_SESSION['isbn'] = $id;
 				<form>
 					<div class="btn-group">
 					
-						<a href="return.php?id=<?php echo $_SESSION['isbn']; ?>" id="return" class="btn btn-success btn-md"><span class="glyphicon glyphicon-book"></span><span class="glyphicon glyphicon-arrow-right"></span><span class="hidden-xs"> Return</span></a>
+					<?php if(isset($_SESSION['username'])){ ?>
+							<a href="return.php?id=<?php echo $_SESSION['isbn']; ?>" id="return" class="btn btn-success btn-md"><span class="glyphicon glyphicon-book"></span><span class="glyphicon glyphicon-arrow-right"></span><span class="hidden-xs"> Return</span></a>
+					<?php } ?>
+
+						
 						
 						<!-- <button class="btn btn-warning btn-md" id="reserve" name="reserve" value="<?php echo $row['isbn']; ?>"><span class="glyphicon glyphicon-tag"></span><span class="hidden-xs"> Reserve</span></button> -->
 					
