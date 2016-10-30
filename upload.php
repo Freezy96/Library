@@ -6,7 +6,7 @@ $tmp_name = $_FILES['avatars']['tmp_name'];
 $location = "$name";
 move_uploaded_file($tmp_name,$location);
 
-$sql = "UPDATE users SET profileimage = '$location' WHERE id = '$sessionid'";
+$sql = "UPDATE books SET image = '$location' WHERE id = '$sessionid'";
 $conn->query($sql);
 $conn->close();
 // header('location: index.php');

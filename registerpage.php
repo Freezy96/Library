@@ -36,15 +36,6 @@
 							<input type="email" name="email" class="form-control">
 						</div>
 					</div>
-					<div class="form-group">
-						<label class="control-label col-md-2">Identity</label>
-						<div class="col-md-10">
-							<select class="form-control" name="identity">
-								<option value="Student">Student</option>
-								<option value="Staff">Staff</option>
-							</select>
-						</div>
-					</div>
 					<button class="pull-right btn btn-primary btn-md" type="submit">Register</button>
 				</form>
 			</div>
