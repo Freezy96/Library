@@ -28,6 +28,9 @@ $result = $conn->query($sql);
 	<tr>
 		<th>Publisher</th>
 		<td><?php echo $row['publisher']; ?></td>
+		<?php if(isset($_SESSION['username'])){ ?>
+		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-warning pull-right"><span class="glyphicon glyphicon-eye-open"></span> Update</a></td>
+		<?php } ?>
 	</tr>
 	<tr>
 	<tr>
@@ -64,6 +67,9 @@ $result = $conn->query($sql);
 	<tr>
 		<th>Publisher</th>
 		<td><?php echo $rowhot['publisher']; ?></td>
+		<?php if(isset($_SESSION['username'])){ ?>
+		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning pull-right"><span class="glyphicon glyphicon-eye-open"></span> Update</a></td>
+		<?php } ?>
 	</tr>
 	<tr>
 	<tr>
