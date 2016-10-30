@@ -35,7 +35,14 @@ $_SESSION['isbn'] = $id;
 </script>
 		<div class="container well">
 			<div class="col-md-4">
-				<img src="<?php echo $row['image']; ?>" alt="Book Image">
+				<img height="499" width="328" src="<?php echo $row['image']; ?>" alt="Book Image"><br><br>
+				<form action="upload.php" method="POST" enctype="multipart/form-data">
+				<input type="hidden" value="<?php echo $_SESSION['isbn']; ?>" name="isbn">
+				<input type="file" class="form-control" name="avatars" id="file"/><br>
+				<button class="btn btn-default btn-md" type="submit" value="Submit">
+					Submit
+				</button>
+				</form>
 			</div>
 			<div class="col-md-8">
 				<h2 role="book-title"><?php echo $row['title']; ?></h2>
@@ -55,6 +62,10 @@ $_SESSION['isbn'] = $id;
 					<tr>
 						<th><h4>Status</h4></th>
 						<td><h4><?php echo $available; ?></h4></td>
+					</tr>
+					<tr>
+						<th><h4>Description</h4></th>
+						<td><h4><?php echo $row['description']; ?></h4></td>
 					</tr>
 				</table>
 			
