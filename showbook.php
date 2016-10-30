@@ -21,7 +21,9 @@ $result = $conn->query($sql);
 	<tr>
 		<th>Author</th>
 		<td><?php echo $row['author']; ?></td>
+		<?php if(isset($_SESSION['username'])){ ?>
 		<td><a href="delete.php?id=<?php echo $row['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-eye-open"></span> Delete</a></td>
+		<?php } ?>
 	</tr>
 	<tr>
 		<th>Publisher</th>
@@ -55,7 +57,9 @@ $result = $conn->query($sql);
 	<tr>
 		<th>Author</th>
 		<td><?php echo $rowhot['author']; ?></td>
+		<?php if(isset($_SESSION['username'])){ ?>
 		<td><a href="delete.php?id=<?php echo $rowhot['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-eye-open"></span> Delete</a></td>
+		<?php } ?>
 	</tr>
 	<tr>
 		<th>Publisher</th>
