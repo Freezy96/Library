@@ -169,57 +169,68 @@
 					<li class="<?php if($page === '5'){ echo 'active'; } ?>"><a href="index.php?page=5">5</a></li>
 				</ul>
 			</nav>
+
+			<?php 
+			require_once('config.php');
+			$sql1 = "SELECT * FROM books WHERE isbn='978-0393339758'";
+			$resulta = $conn->query($sql1);
+			$rowa = $resulta->fetch_assoc();
+			$sql2 = "SELECT * FROM books WHERE isbn='978-0812981605'";
+			$resultb = $conn->query($sql2);
+			$rowb = $resultb->fetch_assoc();
+			 ?>
+			
 			<div class="col-md-6">
 				<h3><span class="glyphicon glyphicon-book"></span> New Books <span class="label label-danger">New</span></h3>
-				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
+				<a href="bookdetails.php?id=<?php echo $rowa['isbn']; ?>" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 				<table class="table">
 					<tr>
 						<th class="col-xs-2">Title</th>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowa['title']; ?></td>
 						<td rowspan="4">
 							<div class="col-xs-6">
-								<img src="0060515228.jpg" alt="Book Image" width="145" height="200">
+								<img src="<?php echo $rowa['image']; ?>" alt="Book Image" width="145" height="200">
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th class="col-xs-2">Author</th>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowa['author']; ?></td>
 					</tr>
 					<tr>
 						<th class="col-xs-2">Publisher</th>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowa['publisher']; ?></td>
 					</tr>
 					<tr>
-						<th class="col-xs-2">Call Number</th>
-						<td class="col-xs-4"></td>
+						<th class="col-xs-2">ISBN</th>
+						<td class="col-xs-4"><?php echo $rowa['isbn']; ?></td>
 					</tr>
 				</table>
 			</div>
 			<div class="col-md-6">
 				<h3><span class="danger glyphicon glyphicon-fire"></span> Popular Books</h3>
-				<a href="" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
+				<a href="bookdetails.php?id=<?php echo $rowb['isbn']; ?>" class="pull-right btn btn-danger btn-xs">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 				<table class="table">
 					<tr>
 						<th class="col-xs-2">Title</td>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowb['title']; ?></td>
 						<td rowspan="4">
 							<div class="col-xs-6">
-								<img src="0307277291.jpg" alt="Book Image" width="145" height="200">
+								<img src="<?php echo $rowb['image']; ?>" alt="Book Image" width="145" height="200">
 							</div>
 						</td>
 					</tr>
 					<tr>
 						<th class="col-xs-2">Author</td>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowb['author']; ?></td>
 					</tr>
 					<tr>
 						<th class="col-xs-2">Publisher</td>
-						<td class="col-xs-4"></td>
+						<td class="col-xs-4"><?php echo $rowb['pubisher']; ?></td>
 					</tr>
 					<tr>
-						<th class="col-xs-2">Call Number</td>
-						<td class="col-xs-4"></td>
+						<th class="col-xs-2">ISBN</td>
+						<td class="col-xs-4"><?php echo $rowb['isbn']; ?></td>
 					</tr>
 				</table>
 			</div>

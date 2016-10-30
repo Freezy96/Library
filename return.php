@@ -1,8 +1,7 @@
 <?php session_start();
 require_once('config.php');
-$loanid = $_POST['loanid'];
-$isbn = $_POST['hidden'];
-$sql = "UPDATE books SET loan='$loanid' WHERE isbn='$isbn'";
+$isbn = $_GET['id'];
+$sql = "UPDATE books SET loan='0' WHERE isbn='$isbn'";
 $conn->query($sql);
 echo $conn->error;
 header("location: bookdetails.php?id=$isbn");

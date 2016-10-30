@@ -1,5 +1,5 @@
 <div class="well">
-	<form class="form-inline" method="GET" action="search.php">
+	<form class="form-inline" method="GET" action="">
 		<div class="form-group">
 			<div class="input-group">
 				<div class="input-group-addon"><i class="fa fa-search"></i></div>
@@ -15,6 +15,6 @@
 				<option value="isbn">ISBN</option>
 			</select>
 		</div>
-		<button type="submit" class="btn btn-primary btn-md">Search</button>
+		<button type="submit" name="searchbtn" class="btn btn-primary btn-md">Search</button>
 	</form>
 </div>

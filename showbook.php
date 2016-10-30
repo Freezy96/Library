@@ -1,48 +1,75 @@
-<h2><span class="danger glyphicon glyphicon-fire"></span> Top Books</h2>
+<?php session_start();
+require_once('config.php');
+if(isset($_GET['searchbtn'])){
+$search = $_GET['search'];
+$searchby = $_GET['searchby'];
+$sql = "SELECT * FROM books WHERE ".$searchby." LIKE '%$search%'";
+$result = $conn->query($sql);
+
+ ?>
+
+
+
 <table class="table">
+<?php while($row = $result->fetch_assoc()){ ?>
 	<tr>
-		<td rowspan="5"><img src="0307277291.jpg" alt="Book Image" width="145" height="200"></td>
+		<td rowspan="5"><img src="<?php echo $row['image']; ?>" alt="Book Image" width="145" height="200"></td>
 		<th>Title</th>
-		<td>Self-Help</td>
+		<td><?php echo $row['title']; ?></td>
 		<td rowspan="5"><a href="bookdetails.php" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
 	</tr>
 	<tr>
 		<th>Author</th>
-		<td>Lorrie Moore</td>
+		<td><?php echo $row['author']; ?></td>
 	</tr>
 	<tr>
 		<th>Publisher</th>
-		<td>Vintage</td>
+		<td><?php echo $row['publisher']; ?></td>
 	</tr>
 	<tr>
-		<th>Call Number</th>
-		<td></td>
-	</tr>
 	<tr>
 		<th>ISBN</th>
-		<td>0307277291</td>
+		<td><?php echo $row['isbn']; ?></td>
 	</tr>
-	<tr>
-		<td rowspan="5"><img src="1449390544.jpg" alt="Book Image" width="145" height="200"></td>
+<?php 
+	} 
+}else{
+	?>
+<table class="table">
+<h2><span class="danger glyphicon glyphicon-fire"></span> Top Books</h2>
+<?php
+	$sqlhot = "SELECT * FROM books limit 2";
+	$result = $conn->query($sqlhot);
+	
+	while($rowhot = $result->fetch_assoc()){
+?>
+
+<tr>
+		<td rowspan="5"><img src="<?php echo $rowhot['image']; ?>" alt="Book Image" width="145" height="200"></td>
 		<th>Title</th>
-		<td></td>
-		<td rowspan="5"><a class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
+		<td><?php echo $rowhot['title']; ?></td>
+		<td rowspan="5"><a href="bookdetails.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
 	</tr>
 	<tr>
 		<th>Author</th>
-		<td></td>
+		<td><?php echo $rowhot['author']; ?></td>
 	</tr>
 	<tr>
 		<th>Publisher</th>
-		<td></td>
+		<td><?php echo $rowhot['publisher']; ?></td>
 	</tr>
 	<tr>
-		<th>Call Number</th>
-		<td></td>
-	</tr>
 	<tr>
 		<th>ISBN</th>
-		<td>1449390544</td>
+		<td><?php echo $rowhot['isbn']; ?></td>
 	</tr>
+
+<?php	
+ 	}
+ 	?>
+</table>
+ 	<?php
+}
+?>
 </table>
 <button class="btn btn-primary btn-block">More <span class="caret"></span></button><br>

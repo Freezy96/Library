@@ -1,4 +1,4 @@
-<?php session_start();
+<!-- <?php session_start();
 require_once('config.php'); 
 
 //get the q parameter from URL
@@ -6,9 +6,9 @@ $q=$_GET["search"];
 
 //lookup all links from the xml file if length of q>0
 if (strlen($q)>0) {
-$searchby = $_POST['searchby'];
+$searchby = $_GET['searchby'];
   $q = $conn->escape_string($q);
-  $get_topics_sql = "SELECT title, author,subject, isbn, callnumber FROM books WHERE '$searchby' LIKE '%$q%' LIMIT 8";
+  $get_topics_sql = "SELECT title, author, subject, isbn FROM books WHERE ".$searchby." LIKE '%$q%' LIMIT 8";
 
   $get_topics_result = $conn->query($get_topics_sql);
 
@@ -17,9 +17,9 @@ $searchby = $_POST['searchby'];
 
   while ($topic_info = $get_topics_result->fetch_assoc()) {
     $topic_id = $topic_info['id'];
-    $topic_title = stripcslashes($topic_info['$searchby']);
+    $topic_title = stripcslashes($topic_info['title']);
 
-    $hint = "<a href='bookloaninfo.php?topic_id=$id'>$searchby</a>";
+    $hint = "<a href='bookdetials.php?topic_id=$id'>$topic_title</a>";
 
     array_push($hints, $hint);
   }
@@ -36,3 +36,15 @@ if (empty($hints)) {
 //output the response
 echo $response;
 ?>
+
+ -->
+<!-- 
+<?php
+require_once('config.php');
+$search = $_GET['search'];
+$searchby = $_GET['searchby'];
+$sql = "SELECT * FROM books WHERE ".$searchby." LIKE '%$search%'";
+$result = $conn->query($sql);
+while($row = $result->fetch_assoc()){
+
+ ?> -->
