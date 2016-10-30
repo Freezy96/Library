@@ -1,6 +1,8 @@
+<?php $page = $_GET['page']; ?>
 			<h2><i class="fa fa-newspaper-o"></i> Library News & Notices</h2>
 			<a href="" class="pull-right btn btn-danger btn-sm">More <span class="glyphicon glyphicon-chevron-right"></span></a>
 			<table class="table table-hover">
+<?php if(!isset($_GET['page'])){ ?>
 				<tr>
 					<td><a href="">Library Exhibition: Spooky Spooky October</a></td>
 				</tr>
@@ -31,10 +33,7 @@
 				<tr>
 					<td><a href="">LIBRARY CLOSING ANNOUNCEMENT – Chinese New Year / 农历新年闭馆通知</a></td>
 				</tr>
-			</table>
-
-
-			<!-- <table class="table table-hover">
+<?php }elseif($page === '2'){ ?>
 				<tr>
 					<td><a href="">Library E-Resources’ Webpage Reformation / 图书馆电子资源网页更新</a></td>
 				</tr>
@@ -65,9 +64,7 @@
 				<tr>
 					<td><a href="">Adjustment of borrowing privileges / 图书馆借阅册数调整通告</a></td>
 				</tr>
-			</table>
-
-			<table class="table table-hover">
+<?php }elseif ($page === '3') { ?>
 				<tr>
 					<td><a href="">Chinese Book Fair / 中文书展</a></td>
 				</tr>
@@ -98,9 +95,7 @@
 				<tr>
 					<td><a href="">Book Sale / 书展</a></td>
 				</tr>
-			</table>
-
-			<table class="table table-hover">
+<?php }elseif($page === '4'){ ?>
 				<tr>
 					<td><a href="">Announcement</a></td>
 				</tr>
@@ -131,9 +126,7 @@
 				<tr>
 					<td><a href="">Difficulty in Accessing ProQuest, Ebrary and WanFang Databases in Campus / 校内无法直接登录ProQuest、Ebrary与万方数据库</a></td>
 				</tr>
-			</table>
-
-			<table class="table table-hover">
+<?php }elseif($page === '5'){ ?>
 				<tr>
 					<td><a href="">Prof. Shan Te Hsing Gives Seminar on “Edward Said in the Chinese World”/ 单德兴教授南方大学学院开讲“华文世界的萨依德”</a></td>
 				</tr>
@@ -164,27 +157,16 @@
 				<tr>
 					<td><a href="">Adjustment of the TCM Library's opening hour / 中医图本周六闭馆</a></td>
 				</tr>
-			</table> -->
+<?php } ?>
+			</table>
 
 			<nav class="text-center">
 				<ul class="pagination">
-<?php if(isset($_GET['page'])){ ?>
-					<li>
-						<a href="#" aria-label="Previous">
-							<span aria-hidden="true">&laquo;</span>
-						</a>
-					</li>
-<?php } ?>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li><a href="#">4</a></li>
-					<li><a href="#">5</a></li>
-					<li>
-						<a href="#" aria-label="Next">
-							<span aria-hidden="true">&raquo;</span>
-						</a>
-					</li>
+					<li class="<?php if(!isset($_GET['page'])){ echo 'active'; } ?>"><a href="index.php">1</a></li>
+					<li class="<?php if($page === '2'){ echo 'active'; } ?>"><a href="index.php?page=2">2</a></li>
+					<li class="<?php if($page === '3'){ echo 'active'; } ?>"><a href="index.php?page=3">3</a></li>
+					<li class="<?php if($page === '4'){ echo 'active'; } ?>"><a href="index.php?page=4">4</a></li>
+					<li class="<?php if($page === '5'){ echo 'active'; } ?>"><a href="index.php?page=5">5</a></li>
 				</ul>
 			</nav>
 			<div class="col-md-6">

@@ -16,7 +16,6 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="">News</a></li>
 								<li><a href="">TCM Library</a></li>
 								<li><a href="">Shuxianglou</a></li>
 								<li><a href="">Digital Archive</a></li>

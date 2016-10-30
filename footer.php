@@ -1,0 +1,1 @@
+<button class="btn btn-primary btn-block">&copy;2016 Chow Jun All rights reserved</button>
