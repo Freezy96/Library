@@ -1,6 +1,8 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Library Catalogue</title>
 <?php include 'head.php'; ?>
 </head>

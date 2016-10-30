@@ -2,7 +2,7 @@
 session_start();
 if(session_destroy())
 {
-header("Location: loginpage.php");
+header("Location: index.php");
 }
 
 ?>

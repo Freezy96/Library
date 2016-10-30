@@ -15,9 +15,18 @@
 						<input type="password" name="password" placeholder="Password" class="form-control">
 					</div>
 				</div>
+			  <?php if (isset($_SESSION['flash'])) { ?>
+
+			  <p style="color: red; text-align: right">
+			  <?php echo $_SESSION['flash']; ?>
+			  </p>
+
+			  <?php unset($_SESSION['flash']) ?>
+			  <?php } ?>
 				<div class="text-right">
 					<button type="submit" class="btn btn-primary btn-md">Login</button>
 				</div>
+
 			</form>
 		</div>
 		<div class="panel-footer">

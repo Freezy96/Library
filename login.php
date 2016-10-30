@@ -9,10 +9,10 @@ $sessionid = $row['id'];
 if($result->num_rows>0){
 	$_SESSION['id'] = $sessionid;
 	$_SESSION['username'] = $username;
-	header("location: index.php");
+	header("location: catalogue.php");
 }else{
 	$_SESSION['flash'] = "Wrong Username or Password!";
-	header("location: loginpage.php");
+	header("location: catalogue.php");
 }
 $conn->close();
  ?>
