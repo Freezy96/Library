@@ -32,6 +32,140 @@
 					<td><a href="">LIBRARY CLOSING ANNOUNCEMENT – Chinese New Year / 农历新年闭馆通知</a></td>
 				</tr>
 			</table>
+
+
+			<!-- <table class="table table-hover">
+				<tr>
+					<td><a href="">Library E-Resources’ Webpage Reformation / 图书馆电子资源网页更新</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Suspension of Library Wifi Service / 暂停图书馆无线网络服务</a></td>
+				</tr>
+				<tr>
+					<td><a href="">试用资料库：CNKI 中国知网</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Trial Databases</a></td>
+				</tr>
+				<tr>
+					<td><a href="">TCM Library closing TODAY (9 October 2015) / 中医图今日闭馆</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Temporary break down of air-con system / 冷气故障</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Nobel Prize in Literature Book Exhibition / 诺贝尔文学奖主题书展</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Used Book Fair : Come & Visit Us / 喜阅好书 · 欢迎索赠</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Get your Free Complimentary Copies from our Library Outgoing Collections / 赠阅中文电脑书籍</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of borrowing privileges / 图书馆借阅册数调整通告</a></td>
+				</tr>
+			</table>
+
+			<table class="table table-hover">
+				<tr>
+					<td><a href="">Chinese Book Fair / 中文书展</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Newly added audio visual equipment and group reservation / 新增视听器材与开放团体申请使用</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Good News!New Power Sockets installation in Library</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Closing on 23rd March 2015 / 闭馆通告</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of the library’s opening hour on 13/2/2015（Friday）and 17/2/2015（Tuesday） / 2015年2月13日（五）及2015年2月17日调整闭馆时间</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Used Book Fair : Come & Visit Us / 喜阅好书 · 欢迎索赠</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Library opening hours / 图书馆开放时间</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Temporary break down of air-con system / 冷气故障</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Photography/ Filming in the Library / 申请图书馆内摄影</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Book Sale / 书展</a></td>
+				</tr>
+			</table>
+
+			<table class="table table-hover">
+				<tr>
+					<td><a href="">Announcement</a></td>
+				</tr>
+				<tr>
+					<td><a href="">New URL of the Library’s Website / 图书馆网页新网址</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of the TCM Library’s opening hour / 调整中医图的开放时间</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Prohibition on carrying any bags into the library / 禁止携带书包进入图书馆</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Access ProQuest Through Moodle While Off-Campus / 在校外通过登录Moodle 来使用 ProQuest 电子期刊</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Solution for Difficulty in Using Library Catalogue with Internet Explorer Versions later than Version 8 / 无法使用Internet Explorer 8 以上的浏览器来使用图书馆馆藏目录的解决办法</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of the TCM Library’s opening hour on Thursdays and Saturdays / 调整中医图周四及周六的开放时间</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Access Ebrary Through Moodle While Off-Campus / 在校外通过登录Moodle 来使用 Ebrary电子书</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Trial Databases / 试用数据库</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Difficulty in Accessing ProQuest, Ebrary and WanFang Databases in Campus / 校内无法直接登录ProQuest、Ebrary与万方数据库</a></td>
+				</tr>
+			</table>
+
+			<table class="table table-hover">
+				<tr>
+					<td><a href="">Prof. Shan Te Hsing Gives Seminar on “Edward Said in the Chinese World”/ 单德兴教授南方大学学院开讲“华文世界的萨依德”</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Attention / 书架组装</a></td>
+				</tr>
+				<tr>
+					<td><a href="">ProQuest Library Research</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Wan Fang Database 万方数据库</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Long-term Loan Service / 长期借阅服务</a></td>
+				</tr>
+				<tr>
+					<td><a href="">LevArt年度“同游乐”讲座</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Long-term Loan Service / 长期借阅服务</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of the Library’s Closing Time / 提早闭馆通告</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Trial of Databases_ProQuest</a></td>
+				</tr>
+				<tr>
+					<td><a href="">Adjustment of the TCM Library's opening hour / 中医图本周六闭馆</a></td>
+				</tr>
+			</table> -->
+
 			<nav class="text-center">
 				<ul class="pagination">
 <?php if(isset($_GET['page'])){ ?>
