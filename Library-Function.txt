@@ -30,5 +30,6 @@ database design
 	-publisher
 	-image
 	-description
+	-subject
 	-reserve
 	-loan

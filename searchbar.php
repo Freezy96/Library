@@ -13,7 +13,6 @@
 				<option value="author">Author</option>
 				<option value="subject">Subject</option>
 				<option value="isbn">ISBN</option>
-				<option value="callnumber">Call Number</option>
 			</select>
 		</div>
 		<button type="submit" class="btn btn-primary btn-md">Search</button>
