@@ -29,8 +29,7 @@
 
 			</form>
 		</div>
-		<div class="panel-footer"><!-- 
-			<a href="passwordrecover.php">Forgot password?</a> --><br>
+		<div class="panel-footer"><br>
 			<a href="registerpage.php">Not registered yet? Register now.</a>
 		</div>
 	</div>

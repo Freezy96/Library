@@ -5,6 +5,20 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script>
+		function show() {
+		   		document.getElementById('scritta').className='visiblediv'; 
+		   		document.getElementById('scrittb').className='hiddendiv';
+		   		// document.getElementById('buttonb').className='hiddendiv';
+		   		document.getElementById('scrittc').className='showdiv';
+		   		// document.getElementById('buttonc').className='showdiv'; 
+			}
+		function hide() {
+		   		document.getElementById('scritta').className='hiddendiv'; 
+		   		document.getElementById('scrittb').className='showdiv';
+		   		// document.getElementById('buttonb').className='showdiv'; 
+		   		document.getElementById('scrittc').className='hiddendiv';
+		   		// document.getElementById('buttonc').className='hidediv';
+			}
 	    function checkPass(){
 	        //Store the password field objects into variables ...
 	        var pass1 = document.getElementById('password1');
@@ -37,6 +51,13 @@
 	}
 	</script>
 	<style>
+		.visiblediv {
+    		display: block;
+		}
+
+		.hiddendiv {
+    		display: none;
+		}
 		.navbar-default, .nav-pills .open .dropdown-menu,.navbar-default .navbar-nav .open .dropdown-menu, .list-group .active{
 			background-color: #306EFF;
 		}	
