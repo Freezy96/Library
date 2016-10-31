@@ -41,11 +41,8 @@ $result = $conn->query($sql);
 	} 
 }else{
 	?>
-<<<<<<< HEAD
 		
 <table class="table">
-=======
->>>>>>> origin/master
 <h2><span class="danger glyphicon glyphicon-fire"></span> Top Books</h2>
 <table class="table">
 <?php
@@ -125,13 +122,14 @@ while($rowhothidden = $resulthidden->fetch_assoc()){
 
 </table>
 </div>
- 	<?php
-}
-?><div id="scrittb" class="showdiv">
+<div id="scrittb" class="showdiv">
 		<button id="buttonb" class="btn btn-primary btn-block" onclick="show()">More <span class="caret"></span></button><br>	
 	</div>
 	<div id="scrittc" class="hiddendiv">
 		<button id="buttonc" class="btn btn-primary btn-block" onclick="hide()">Less <span class="caret"></span></button><br>	
 	</div>
+ 	<?php
+}
+?>
 </table>
 	
