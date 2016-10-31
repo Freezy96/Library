@@ -17,6 +17,13 @@
 		<div class="col-md-9">
 <?php include 'showbook.php'; ?>
 		</div>
+<?php }elseif($_SESSION['identity'] === 'Staff'){ ?>
+		<div class="col-md-3">
+<?php include 'adminnav.php'; ?>
+		</div>
+		<div class="col-md-9">
+<?php include 'showbook.php'; ?>
+		</div>
 <?php }else{ ?>
 		<div class="col-md-12">
 <?php include 'showbook.php'; ?>

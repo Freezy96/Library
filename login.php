@@ -6,9 +6,11 @@ $sql = "SELECT * FROM users WHERE username = '$username'AND password = '$passwor
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 $sessionid = $row['id'];
+$identity = $row['identity'];
 if($result->num_rows>0){
 	$_SESSION['id'] = $sessionid;
 	$_SESSION['username'] = $username;
+	$_SESSION['identity'] = $identity;
 	header("location: catalogue.php");
 }else{
 	$_SESSION['flash'] = "Wrong Username or Password!";

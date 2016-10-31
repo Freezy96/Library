@@ -17,7 +17,7 @@
 				</div>
 			  <?php if (isset($_SESSION['flash'])) { ?>
 
-			  <p style="color: red; text-align: right">
+			  <p class="danger">
 			  <?php echo $_SESSION['flash']; ?>
 			  </p>
 
@@ -29,7 +29,11 @@
 
 			</form>
 		</div>
+<<<<<<< HEAD
 		<div class="panel-footer"><br>
+=======
+		<div class="panel-footer">
+>>>>>>> origin/master
 			<a href="registerpage.php">Not registered yet? Register now.</a>
 		</div>
 	</div>
