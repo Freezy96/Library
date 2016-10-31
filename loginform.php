@@ -17,7 +17,7 @@
 				</div>
 			  <?php if (isset($_SESSION['flash'])) { ?>
 
-			  <p style="color: red; text-align: right">
+			  <p class="danger">
 			  <?php echo $_SESSION['flash']; ?>
 			  </p>
 
@@ -29,8 +29,7 @@
 
 			</form>
 		</div>
-		<div class="panel-footer"><!-- 
-			<a href="passwordrecover.php">Forgot password?</a> --><br>
+		<div class="panel-footer">
 			<a href="registerpage.php">Not registered yet? Register now.</a>
 		</div>
 	</div>

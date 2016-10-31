@@ -15,21 +15,21 @@ $result = $conn->query($sql);
 		<td rowspan="5"><img src="<?php echo $row['image']; ?>" alt="Book Image" width="145" height="200"></td>
 		<th>Title</th>
 		<td><?php echo $row['title']; ?></td>
-		<td><a href="bookdetails.php?id=<?php echo $row['isbn']; ?>" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
+		<td><a href="bookdetails.php?id=<?php echo $row['isbn']; ?>" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
 		
 	</tr>
 	<tr>
 		<th>Author</th>
 		<td><?php echo $row['author']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="delete.php?id=<?php echo $row['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
+		<td><a href="delete.php?id=<?php echo $row['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger btn-sm pull-right"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
 		<th>Publisher</th>
 		<td><?php echo $row['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-warning pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
@@ -54,21 +54,21 @@ $result = $conn->query($sql);
 		<td rowspan="5"><img src="<?php echo $rowhot['image']; ?>" alt="Book Image" width="145" height="200"></td>
 		<th>Title</th>
 		<td><?php echo $rowhot['title']; ?></td>
-		<td><a href="bookdetails.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
+		<td><a href="bookdetails.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-primary btn-sm btn-sm pull-right"><span class="glyphicon glyphicon-eye-open"></span> Details</a></td>
 		
 	</tr>
 	<tr>
 		<th>Author</th>
 		<td><?php echo $rowhot['author']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="delete.php?id=<?php echo $rowhot['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger pull-right"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
+		<td><a href="delete.php?id=<?php echo $rowhot['isbn']; ?>" onclick="return confirm('Are you sure you want to delete this?')" class="btn btn-danger btn-sm pull-right"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
 		<th>Publisher</th>
 		<td><?php echo $rowhot['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
