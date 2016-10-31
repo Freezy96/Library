@@ -8,7 +8,7 @@ $sql = "SELECT * FROM books WHERE ".$searchby." LIKE '%$search%'";
 $result = $conn->query($sql);
 
  ?>
-
+<h2><span class="glyphicon glyphicon-search"></span> Search Results</h2>
 <table class="table">
 <?php while($row = $result->fetch_assoc()){ ?>
 	<tr>
@@ -41,8 +41,8 @@ $result = $conn->query($sql);
 	} 
 }else{
 	?>
-<table class="table">
 <h2><span class="danger glyphicon glyphicon-fire"></span> Top Books</h2>
+<table class="table">
 <?php
 	$sqlhot = "SELECT * FROM books limit 2";
 	$result = $conn->query($sqlhot);

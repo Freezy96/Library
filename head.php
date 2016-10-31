@@ -124,13 +124,16 @@
 		.btn-primary:hover{
 			background-color: #2B65EC;
 		}
-		.btn-danger, .label-danger{
-			background-color: #F62817;
-		}
-		.btn-danger:hover{
+		.btn-danger:hover, .list-group .bg-danger:hover{
 			background-color: #E41B17;
+			border-color: #F62817;
 		}
 		.danger{
 			color: #F62817;
+		}
+		.list-group .bg-danger, .btn-danger, .label-danger{
+			border-color: #F62817;
+			background-color: #F62817;
+			color: #fff;
 		}
 	</style>
