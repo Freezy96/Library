@@ -6,21 +6,17 @@ $author = mysqli_escape_string($conn, $_POST['author']);
 $publisher = mysqli_escape_string($conn, $_POST['publisher']);
 $description = mysqli_escape_string($conn, $_POST['description']);
 $subject = mysqli_escape_string($conn, $_POST['subject']);
-// $callnumber = mysqli_escape_string($conn, $_POST['callnumber']);
-// $reserve = mysqli_escape_string($conn, $_POST['reserve']);
-// $loan = mysqli_escape_string($conn, $_POST['loan']);
-
-$sql = "INSERT INTO books(isbn, title, author, publisher, description, subject, callnumber, reserve, loan) VALUES('$isbn', '$title', '$author', '$publisher', '$description', '$subject', '0', '0')";
-$conn->query($sql);
-echo $conn->error;
-
 $name = $_FILES['avatars']['name'];
 $tmp_name = $_FILES['avatars']['tmp_name'];
 $location = "$name";
 move_uploaded_file($tmp_name,$location);
-$sql = "UPDATE books SET image = '$location' WHERE isbn = '$isbn'";
+// $callnumber = mysqli_escape_string($conn, $_POST['callnumber']);
+// $reserve = mysqli_escape_string($conn, $_POST['reserve']);
+// $loan = mysqli_escape_string($conn, $_POST['loan']);
+
+$sql = "INSERT INTO books(isbn, title, author, publisher, image, description, subject, reserve, loan) VALUES('$isbn', '$title', '$author', '$publisher', '$location', '$description', '$subject', '0', '0')";
 $conn->query($sql);
 echo $conn->error;
-
+header("location: catalogue.php");
 $conn->close();
  ?>

@@ -6,6 +6,10 @@ $title = mysqli_escape_string($conn, $_POST['title']);
 $author = mysqli_escape_string($conn, $_POST['author']);
 $publisher = mysqli_escape_string($conn, $_POST['publisher']);
 $description = mysqli_escape_string($conn, $_POST['description']);
+$name = $_FILES['avatars']['name'];
+$tmp_name = $_FILES['avatars']['tmp_name'];
+$location = "$name";
+move_uploaded_file($tmp_name,$location);
 
 $sql = "UPDATE books SET isbn='$isbn', title='$title', author='$author', publisher='$publisher', description='$description' WHERE isbn='$bookid'";
 $result = $conn->query($sql);

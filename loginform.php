@@ -29,13 +29,9 @@
 
 			</form>
 		</div>
-<<<<<<< HEAD
-		<div class="panel-footer"><br>
-=======
-		<div class="panel-footer">
->>>>>>> origin/master
+		<!--<div class="panel-footer">
 			<a href="registerpage.php">Not registered yet? Register now.</a>
-		</div>
+		</div>-->
 	</div>
 </div>
 	

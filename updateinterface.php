@@ -18,12 +18,11 @@ $sql = "SELECT * FROM books WHERE isbn='$isbn'";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
  ?>
-<form action="update.php" method="POST">
 		<div class="container well">
 			<div class="col-md-4">
 				<img height="499" width="328" src="<?php echo $row['image']; ?>" alt="Book Image"><br><br>
 				<form class="form-inline" action="upload.php" method="POST" enctype="multipart/form-data">
-					<input type="hidden" value="<?php echo $_SESSION['isbn']; ?>" name="isbn">
+					<input type="hidden" value="<?php echo $isbn; ?>" name="isbn">
 					<div class="form-group">
 						<input type="file" name="avatars" id="file"/>
 					</div>
@@ -32,6 +31,7 @@ $row = $result->fetch_assoc();
 			</div>
 			<div class="col-md-8">
 				<h2>Update Book Details</h2>
+				<form action="update.php" method="POST">
 				<table class="table">
 					<tr>
 						<th><h4>ISBN</h4></th>
@@ -61,9 +61,9 @@ $row = $result->fetch_assoc();
 						<button class="btn btn-danger btn-md" onclick="goBack();"><span class="glyphicon glyphicon-remove"></span><span class="hidden-xs"> Back</span></button>
 					</div>
 				</div>
+				</form>	
 			</div>
 		</div>
-</form>	
 <?php include 'footer.php'; ?>
 	</div>
 </div>

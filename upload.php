@@ -11,5 +11,4 @@ echo $conn->error;
 $conn->close();
 // header('location: index.php');
  ?>
- <p>Upload Successful</p>
  <meta http-equiv="refresh" content="0.1; url=bookdetails.php?id=<?php echo $isbn ?>" />

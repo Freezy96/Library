@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 		<th>Publisher</th>
 		<td><?php echo $row['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
@@ -41,8 +41,6 @@ $result = $conn->query($sql);
 	} 
 }else{
 	?>
-		
-<table class="table">
 <h2><span class="danger glyphicon glyphicon-fire"></span> Top Books</h2>
 <table class="table">
 <?php
@@ -71,7 +69,7 @@ $result = $conn->query($sql);
 		<th>Publisher</th>
 		<td><?php echo $rowhot['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
@@ -108,7 +106,7 @@ while($rowhothidden = $resulthidden->fetch_assoc()){
 		<th>Publisher</th>
 		<td><?php echo $rowhothidden['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $rowhothidden['isbn']; ?>" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
@@ -126,7 +124,7 @@ while($rowhothidden = $resulthidden->fetch_assoc()){
 		<button id="buttonb" class="btn btn-primary btn-block" onclick="show()">More <span class="caret"></span></button><br>	
 	</div>
 	<div id="scrittc" class="hiddendiv">
-		<button id="buttonc" class="btn btn-primary btn-block" onclick="hide()">Less <span class="caret"></span></button><br>	
+		<button id="buttonc" class="btn btn-primary btn-block" onclick="hide()">Less <span class="dropup"><span class="caret"></span></span></button><br>	
 	</div>
  	<?php
 }

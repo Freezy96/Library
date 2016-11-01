@@ -18,7 +18,7 @@ $sql = "DELETE FROM books WHERE isbn='$id'";
 
 if ($conn->query($sql)) {
     echo "<script> alert('Record successfully deleted')</script>";
-    echo "<script> window.location='index.php'</script>";
+    echo "<script> window.location='catalogue.php'</script>";
 } else {
     echo "<script> alert('Error deleting record: " . $conn->error."')</script>";
     echo "<script> window.location='index.php'</script>";
