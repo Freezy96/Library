@@ -29,9 +29,9 @@
 
 			</form>
 		</div>
-		<div class="panel-footer">
+		<!--<div class="panel-footer">
 			<a href="registerpage.php">Not registered yet? Register now.</a>
-		</div>
+		</div>-->
 	</div>
 </div>
 	

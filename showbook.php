@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 		<th>Publisher</th>
 		<td><?php echo $row['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $row['isbn']; ?>" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
@@ -68,7 +68,7 @@ $result = $conn->query($sql);
 		<th>Publisher</th>
 		<td><?php echo $rowhot['publisher']; ?></td>
 		<?php if(isset($_SESSION['username'])){ ?>
-		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-warning btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
+		<td><a href="updateinterface.php?id=<?php echo $rowhot['isbn']; ?>" class="btn btn-primary btn-sm pull-right"><span class="glyphicon glyphicon-floppy-disk"></span> Update</a></td>
 		<?php } ?>
 	</tr>
 	<tr>
