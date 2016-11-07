@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 				</tr>
 				<?php while($row = $result->fetch_assoc()){ ?>
 				<tr>
-					<td><?php echo $row['image']; ?></td>
+					<td><img src="<?php echo $row['image']; ?>" height="150" width="95"></td>
 					<td><?php echo $row['title']; ?></td>
 					<td><?php echo $row['loan']; ?></td>
 				</tr>
