@@ -64,27 +64,19 @@ $_SESSION['isbn'] = $id;
 			
 				<div class="pull-left">
 				<form action="bookdetailsloan.php" method="POST">
-					<div class="btn-group">
 					<?php if(isset($_SESSION['username'])){ ?>
-							<button value="<?php echo $_SESSION['isbn']; ?>" class="btn btn-primary btn-md" id="loan" name="loanbtn" value="<?php echo $id ?>"><span class="glyphicon glyphicon-arrow-left"></span><span class="glyphicon glyphicon-book"></span><span class="hidden-xs"> Loan</span>
-							</button>
+					<button value="<?php echo $_SESSION['isbn']; ?>" class="btn btn-primary btn-md" id="loan" name="loanbtn" value="<?php echo $id ?>"><span class="glyphicon glyphicon-arrow-left"></span><span class="glyphicon glyphicon-book"></span><span class="hidden-xs"> Loan</span></button>
 					<?php } ?>
-						
-					
-						
-					</div>
 				</form>
 				</div>
 			
 				<div class="pull-right">
-				<form>
-					<div class="btn-group">
+					<form>
 					<?php if(isset($_SESSION['username'])){ ?>
 							<a href="return.php?id=<?php echo $_SESSION['isbn']; ?>" id="return" class="btn btn-success btn-md"><span class="glyphicon glyphicon-book"></span><span class="glyphicon glyphicon-arrow-right"></span><span class="hidden-xs"> Return</span></a>
 					<?php } ?>
 						<a href="catalogue.php" class="btn btn-danger btn-md"><span class="glyphicon glyphicon-remove"></span><span class="hidden-xs"> Back</span></a>
-				</form>		
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
